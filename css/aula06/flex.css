@@ -1,0 +1,45 @@
+.container{
+    /* o container esta ordenando os itens de cima para baixo (coluna) */
+    display: flex;
+    flex-direction: column-reverse;
+
+    /* por padrao o display flex ordena os itens em linha e isso faz com que justify funcione ma horizontal e align na vertical. A partir do momento em que colocamos flex-display: column os papéis se onvertem e agora p justify funciona na vertical e o align na horizontal */
+    justify-content: space-evenly;
+    align-items: center;
+    
+    background-color: black;
+    width: 80vw;
+    height: 70vh; 
+
+    border-radius: 50px;
+}
+
+.quadrado{
+    /* quadrado arredondado */
+    width: 100px;
+    height: 100px;
+    background-color: #7fff00;
+    border-radius: 25%;
+
+    /* numero branco */
+    color: white;
+    font-size: 80px;
+
+    /* alinhar numero dentro do quadrado */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tela{
+    /* centralizando os itens verticalmente e horizontalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+
+    /* como o siaplay flex só abre espaço no eiexo main é necessário configurar uma altura manualmente para que o body tenha uma caixa com altura que possibilite movimentar os itens internamente */
+
+    /* 90vh = 90% do viewport height (altura da vizualização) */
+    height: 90vh;
+}
